@@ -9,6 +9,8 @@
     "deploy": "npm run build && sh deploy.sh prod"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.2",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1"
