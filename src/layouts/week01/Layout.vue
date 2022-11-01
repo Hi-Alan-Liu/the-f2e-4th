@@ -2,15 +2,18 @@
   <div id="app">
     <NavBar />
     <div class="week01">
-        <h2>測試</h2>
       <router-view/>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
+import NavBar from '@/components/week01/NavBar.vue'
+
 export default {
-  name: 'Week01Layout'
+  name: 'Week01Layout',
+  components: {
+    NavBar
+  }
 }
 </script>

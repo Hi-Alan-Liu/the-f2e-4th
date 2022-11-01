@@ -3,7 +3,7 @@
     <div class="card p-4">
 
       <div class="d-flex justify-content-evenly">
-        <img src="../assets/avatar.jpg" class="rounded-circle" alt="Avatar" height="150" width="150">
+        <img src="../assets/images/avatar.jpg" class="rounded-circle" alt="Avatar" height="150" width="150">
       </div>
 
       <h2 class="mt-3">Alan Liu</h2>
