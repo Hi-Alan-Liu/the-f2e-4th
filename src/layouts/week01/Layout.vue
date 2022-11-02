@@ -17,3 +17,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#app {
+  background: black;
+  background-image:
+  linear-gradient(to top, rgba(255, 255, 255, 0.2) 1px, transparent 0),
+  linear-gradient(to left, rgba(255, 255, 255, 0.2) 1px, transparent 0);
+  background-size: 48px 48px;
+  background-repeat: repeat;
+}
+</style>

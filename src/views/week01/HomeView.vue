@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <div class="section1 box justify-content-evenly">
 
       <div class="py-3 w-100">
@@ -14,9 +15,48 @@
           <img src="@/assets/images/week01/dashboard_sec1_pin.png" class="rounded-circle pin" alt="pin">
         </div>
       </div>
+
+      <div class="blank text-light zindex-sticky">
+
+        <div class="float-start ps-5 text-start">
+          <p class="fs-2" style="margin-bottom: 0;">HEXSCHOOL</p>
+          <p class="fs-2">六角學院</p>
+        </div>
+
+        <div class="float-end pe-5 text-end">
+          <p class="fs-2" style="margin-bottom: 0;">UI DESIGN</p>
+          <p class="fs-2" style="margin-bottom: 0;">X</p>
+          <p class="fs-2" style="margin-bottom: 0;">FRONT</p>
+          <p class="fs-2">END</p>
+        </div>
+
+        <div class="p-5" style="margin-bottom: 16rem;">
+        </div>
+
+        <div class="float-start ps-5 text-start">
+          <p class="fs-2" style="margin-bottom: 0;">BLOCK</p>
+          <p class="fs-2">STUDIO</p>
+          <p class="fs-2" style="margin-bottom: 0;">KDAN</p>
+          <p class="fs-2">MOBILE</p>
+          <p class="fs-2" style="margin-bottom: 0;">TITANSOFT</p>
+        </div>
+
+        <div class="float-end pe-5 text-end">
+          <p class="fs-2" style="padding-top: 5rem;margin-bottom: 0;">ENTRY</p>
+          <p class="fs-2" style="margin-bottom: 0;">10.13</p>
+          <p class="fs-2" style="margin-bottom: 0;">/</p>
+          <p class="fs-2">10.30</p>
+        </div>
+      </div>
+
+
+      <img src="@/assets/images/week01/subtitle_sec1.png" class="subtitle my-4" alt="subtitle">
+
+      <img src="@/assets/images/week01/deco_sec1_redwhite.png" class="my-4" alt="redwhite" width="100%">
     </div>
 
     <div class="section2"></div>
+
   </div>
 </template>
 
@@ -52,9 +92,7 @@ export default {
 
 <style scoped>
 .section1 {
-
   height: 100vh;
-
 }
 
 .section1 .title {
@@ -77,13 +115,19 @@ export default {
   width: 10%;
 }
 
+.section1 .blank {
+  height: 60%;
+  font-family: 'ethnocentric', Helvetica, Arial;
+}
+
 .section1 .dashboard {
   position: absolute;
   width: 100%;
 }
+
 .section1 .board {
   width: 100%;
-  max-width: 900px;
+  max-width: 850px;
 }
 
 .section1 .text1 {
@@ -96,20 +140,10 @@ export default {
   transform: rotate(105deg) translateY(-125px);
 }
 
-.section1 .redwhite {
-  height: 10px;
-}
-
 .section2 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #fd89b9;
-}
-
-h2 {
-  margin-top: 200px;
-  margin-bottom: 200px;
 }
 </style>
