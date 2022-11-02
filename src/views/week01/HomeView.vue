@@ -2,10 +2,18 @@
   <div id="app">
     <div class="section1 box justify-content-evenly">
 
+      <div class="py-3 w-100">
+        <img src="@/assets/images/week01/deco_sec1_checks_left.png" alt="checks_left" class="checks_left me-3">
+        <img src="@/assets/images/week01/title_sec1_normal.png" alt="title" class="title" >
+        <img src="@/assets/images/week01/deco_sec1_checks_right.png" alt="checks_right" class="checks_right ms-3">
+      </div>
+
+      <div class="dashboard">
         <img src="@/assets/images/week01/dashboard_sec1_board.png" class="board" alt="board">
         <div class="text1">
           <img src="@/assets/images/week01/dashboard_sec1_pin.png" class="rounded-circle pin" alt="pin">
         </div>
+      </div>
     </div>
 
     <div class="section2"></div>
@@ -44,25 +52,52 @@ export default {
 
 <style scoped>
 .section1 {
-  display: flex;
+
   height: 100vh;
-  background-color: #fd89b9;
+
 }
 
-.board {
+.section1 .title {
+  width: 72%;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {content:url(@/assets/images/week01/title_sec1_normal.png)}
+  100% {content:url(@/assets/images/week01/title_sec1_blink.png)}
+}
+
+.section1 .checks_left {
+  width: 10%;
+}
+
+.section1 .checks_right {
+  width: 10%;
+}
+
+.section1 .dashboard {
+  position: absolute;
   width: 100%;
-  max-width: 800px;
-  position: absolute;
-  bottom: 20%;
+}
+.section1 .board {
+  width: 100%;
+  max-width: 900px;
 }
 
-.text1 {
+.section1 .text1 {
   position: absolute;
-  top: 52%;
+  bottom: 0rem;
+  left: 49%;
 }
 
-.pin {
+.section1 .pin {
   transform: rotate(105deg) translateY(-125px);
+}
+
+.section1 .redwhite {
+  height: 10px;
 }
 
 .section2 {
@@ -71,5 +106,10 @@ export default {
   align-items: center;
   height: 100vh;
   background-color: #fd89b9;
+}
+
+h2 {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 </style>
