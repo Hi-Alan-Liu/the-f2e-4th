@@ -55,8 +55,17 @@
       <img src="@/assets/images/week01/deco_sec1_redwhite.png" class="my-4" alt="redwhite" width="100%">
     </div>
 
-    <div class="section2"></div>
+    <div class="section2">
+      <img src="@/assets/images/week01/title_sec2_outline.png" alt="title_sec2_outline" class="title_sec2_outline my-5 pt-5">
+      <img src="@/assets/images/week01/block_sec2_01_flyin.png" alt="block_sec2_01_flyin" class="block_sec2_01_flyin my-4 float-end">
 
+      <img src="@/assets/images/week01/block_sec2_02_flyin.png" alt="block_sec2_02_flyin" class="block_sec2_02_flyin my-4 float-start">
+    
+      <img src="@/assets/images/week01/block_sec2_03_flyin.png" alt="block_sec2_03_flyin" class="block_sec2_03_flyin my-4 float-end">
+    </div>
+
+    <div class="section3">
+    </div>
   </div>
 </template>
 
@@ -84,6 +93,21 @@ export default {
         }
       })
       .from(".text1", { rotation : -210, duration: 3 })
+
+      gsap.timeline({
+      scrollTrigger: {
+        
+        trigger: ".section2",
+        start: "center center",
+        end: "bottom top",
+        markers: true,
+        scrub: true,
+        pin: true,
+      }
+    })
+    .from(".block_sec2_01_flyin", { x : -innerWidth * 1, opacity: 0 })
+    .from(".block_sec2_02_flyin", { x : innerWidth * 1, opacity: 0 })
+    .from(".block_sec2_03_flyin", { x : -innerWidth * 1, opacity: 0 })
     }
   }
 }
@@ -141,9 +165,36 @@ export default {
 }
 
 .section2 {
+  justify-content: center;
+  align-items: center;
+  height: 105vh;
+  background: -webkit-linear-gradient(180deg, #1A0063 0%, #3126B0 34.67%, #FA7449 69.04%, rgba(255, 46, 0, 0) 100%);
+  background: -o-linear-gradient(180deg, #1A0063 0%, #3126B0 34.67%, #FA7449 69.04%, rgba(255, 46, 0, 0) 100%);
+  background: -moz-linear-gradient(180deg, #1A0063 0%, #3126B0 34.67%, #FA7449 69.04%, rgba(255, 46, 0, 0) 100%);
+  background: linear-gradient(180deg, #1A0063 0%, #3126B0 34.67%, #FA7449 69.04%, rgba(255, 46, 0, 0) 100%);
+}
+
+.section2 img {
+  width: 100%;
+  max-width: 1050px;
+}
+
+.section2 .block_sec2_01_flyin {
+  transform: translate(180px, 0px);
+}
+
+.section2 .block_sec2_02_flyin {
+  transform: translate(-180px, 0px);
+}
+
+.section2 .block_sec2_03_flyin {
+  transform: translate(180px, 0px);
+}
+
+.section3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
 }
 </style>
