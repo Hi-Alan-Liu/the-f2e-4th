@@ -5,6 +5,18 @@
 </template>
 
 <style>
+@font-face {
+  font-family: "SourceHanSansTC";
+  src: local("SourceHanSansTC"),
+    url(../src/assets/fonts/week01/SourceHanSansTC-VF.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "ethnocentric";
+  src: local("ethnocentric"),
+    url(../src/assets/fonts/week01/ethnocentric\ rg.otf) format("truetype");
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
