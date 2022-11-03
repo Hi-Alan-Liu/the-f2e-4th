@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <div class="section1 box justify-content-evenly">
+    <div class="section1 justify-content-evenly">
 
       <div class="py-3 w-100">
         <img src="@/assets/images/week01/deco_sec1_checks_left.png" alt="checks_left" class="checks_left me-3">
@@ -11,7 +11,7 @@
 
       <div class="dashboard">
         <img src="@/assets/images/week01/dashboard_sec1_board.png" class="board" alt="board">
-        <div class="text1">
+        <div class="dashboard-pin">
           <img src="@/assets/images/week01/dashboard_sec1_pin.png" class="rounded-circle pin" alt="pin">
         </div>
       </div>
@@ -89,7 +89,7 @@ export default {
     scrollAnimation() {
       gsap.timeline({
         scrollTrigger: {
-          trigger: ".box",
+          trigger: ".section1",
           start: "center center",
           end: "bottom top",
           markers: true,
@@ -97,7 +97,7 @@ export default {
           pin: true,
         }
       })
-      .from(".text1", { rotation : -210, duration: 3 })
+      .from(".dashboard-pin", { rotation : -210 })
 
       gsap.timeline({
         scrollTrigger: {
@@ -171,7 +171,7 @@ export default {
   max-width: 850px;
 }
 
-.section1 .text1 {
+.section1 .dashboard-pin {
   position: absolute;
   bottom: 0rem;
   left: 49%;
