@@ -54,6 +54,31 @@
   </div>
 </template>
 
+<script>
+import gsap from 'gsap'
+
+export default {
+  mounted: function() {
+    this.scrollAnimation();
+  },
+  methods: {
+    scrollAnimation() {
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section1",
+          start: "center center",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+          pin: true,
+        }
+      })
+      .from(".dashboard-pin", { rotation : -210 })
+    }
+  }
+}
+</script>
+
 <style scoped>
 .section1 {
   height: 100vh;

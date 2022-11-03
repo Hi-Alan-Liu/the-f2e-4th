@@ -14,10 +14,48 @@
   </div>
 </template>
 
+<script>
+import gsap from 'gsap'
+
+export default {
+  mounted: function() {
+    this.scrollAnimation();
+  },
+  methods: {
+    scrollAnimation() {
+
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section2",
+          start: "center center",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+          pin: true,
+        }
+      })
+      .from(".block_sec2_01_flyin", { x : -innerWidth * 1, opacity: 0 })
+      .from(".block_sec2_02_flyin", { x : innerWidth * 1, opacity: 0 })
+      .from(".block_sec2_03_flyin", { x : -innerWidth * 1, opacity: 0 })
+
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section2",
+          markers: true,
+          scrub: true,
+          pin: true,
+        }
+      })
+      .from(".icon_sec2_left_gsap", { y : -innerWidth * 1, duration: 1 })
+      .from(".icon_sec2_right_gsap", { y : innerWidth * 1, duration: 1 }, "<")
+
+    }
+  }
+}
+</script>
+
 <style scoped>
 .section2 {
-  justify-content: center;
-  align-items: center;
   height: 105vh;
   background: -webkit-linear-gradient(180deg, #1A0063 0%, #3126B0 34.67%, #FA7449 69.04%, rgba(255, 46, 0, 0) 100%);
   background: -o-linear-gradient(180deg, #1A0063 0%, #3126B0 34.67%, #FA7449 69.04%, rgba(255, 46, 0, 0) 100%);
