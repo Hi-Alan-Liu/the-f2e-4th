@@ -176,19 +176,19 @@ export default {
 
 .section2 img {
   width: 100%;
-  max-width: 1050px;
+  max-width: 950px;
 }
 
 .section2 .block_sec2_01_flyin {
-  transform: translate(180px, 0px);
+  transform: translate(20%, 0px);
 }
 
 .section2 .block_sec2_02_flyin {
-  transform: translate(-180px, 0px);
+  transform: translate(-20%, 0px);
 }
 
 .section2 .block_sec2_03_flyin {
-  transform: translate(180px, 0px);
+  transform: translate(20%, 0px);
 }
 
 .section3 {
