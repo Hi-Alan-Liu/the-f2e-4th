@@ -1,5 +1,5 @@
 <template>
-  <div class="section3">
+  <div class="solution">
 
     <div class="gradient_sec3_top"></div>
 
@@ -26,7 +26,7 @@ export default {
 
       gsap.timeline({
         scrollTrigger: {
-          trigger: ".section3",
+          trigger: ".solution",
           markers: true,
           scrub: true,
           pin: true,
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style scoped>
-.section3 {
+.solution {
   height: 100vh;
   overflow: hidden;
 }
@@ -68,21 +68,21 @@ export default {
   transform: rotate(-180deg);
 }
 
-.section3 .flag_sec3_top {
+.solution .flag_sec3_top {
   position: absolute;
   width: 110%;
   top: -30%;
   left: -5%;
 }
 
-.section3 .flag_sec3_mid {
+.solution .flag_sec3_mid {
   position: absolute;
   width: 110%;
   z-index: 20;
   left: -5%;
 }
 
-.section3 .flag_sec3_bottom{
+.solution .flag_sec3_bottom{
   position: absolute;
   width: 110%;
   left: -5%;

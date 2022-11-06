@@ -2,7 +2,7 @@
   <div id="app">
     <BannerView />
     <QuestionView />
-    <Section03View />
+    <SolutionView />
     <ScheduleView />
   </div>
 </template>
@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 import BannerView from '../../components/week01/BannerView.vue';
 import QuestionView from '../../components/week01/QuestionView.vue';
-import Section03View from '../../components/week01/Section03View.vue';
+import SolutionView from '../../components/week01/SolutionView.vue';
 import ScheduleView from '../../components/week01/ScheduleView.vue';
 
 export default {
@@ -23,7 +23,7 @@ export default {
   components: {
     BannerView,
     QuestionView,
-    Section03View,
+    SolutionView,
     ScheduleView
   }
 }
