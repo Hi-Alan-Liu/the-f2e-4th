@@ -1,5 +1,5 @@
 <template>
-  <div class="section1 justify-content-evenly">
+  <div class="banner justify-content-evenly">
 
     <div class="py-3 w-100">
       <img src="@/assets/images/week01/deco_sec1_checks_left.png" alt="checks_left" class="checks_left me-3">
@@ -65,7 +65,7 @@ export default {
     scrollAnimation() {
       gsap.timeline({
         scrollTrigger: {
-          trigger: ".section1",
+          trigger: ".banner",
           start: "center center",
           end: "bottom top",
           markers: true,
@@ -80,12 +80,12 @@ export default {
 </script>
 
 <style scoped>
-.section1 {
+.banner {
   height: 100vh;
   overflow: hidden;
 }
 
-.section1 .title {
+.banner .title {
   width: 72%;
   animation-name: example;
   animation-duration: 0.5s;
@@ -97,36 +97,36 @@ export default {
   100% {content:url(@/assets/images/week01/title_sec1_blink.png)}
 }
 
-.section1 .checks_left {
+.banner .checks_left {
   width: 10%;
 }
 
-.section1 .checks_right {
+.banner .checks_right {
   width: 10%;
 }
 
-.section1 .blank {
+.banner .blank {
   height: 60%;
   font-family: 'ethnocentric', Helvetica, Arial;
 }
 
-.section1 .dashboard {
+.banner .dashboard {
   position: absolute;
   width: 100%;
 }
 
-.section1 .board {
+.banner .board {
   width: 100%;
   max-width: 850px;
 }
 
-.section1 .dashboard-pin {
+.banner .dashboard-pin {
   position: absolute;
   bottom: 0rem;
   left: 49%;
 }
 
-.section1 .pin {
+.banner .pin {
   transform: rotate(105deg) translateY(-125px);
 }
 </style>
