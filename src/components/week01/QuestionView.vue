@@ -1,5 +1,5 @@
 <template>
-  <div class="section2">
+  <div class="question">
     <img src="@/assets/images/week01/title_sec2_outline.png" alt="title_sec2_outline" class="title_sec2_outline my-5 pt-5">
 
     <img src="@/assets/images/week01/icon_sec2_left_gsap.png" alt="icon_sec2_left_gsap" class="icon_sec2_left_gsap">
@@ -26,7 +26,7 @@ export default {
 
       gsap.timeline({
         scrollTrigger: {
-          trigger: ".section2",
+          trigger: ".question",
           start: "center center",
           end: "bottom top",
           markers: true,
@@ -40,7 +40,7 @@ export default {
 
       gsap.timeline({
         scrollTrigger: {
-          trigger: ".section2",
+          trigger: ".question",
           markers: true,
           scrub: true,
           pin: true,
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style scoped>
-.section2 {
+.question {
   height: 105vh;
   background: -webkit-linear-gradient(180deg, #1A0063 0%, #3126B0 34.67%, #FA7449 69.04%, rgba(255, 46, 0, 0) 100%);
   background: -o-linear-gradient(180deg, #1A0063 0%, #3126B0 34.67%, #FA7449 69.04%, rgba(255, 46, 0, 0) 100%);
@@ -64,7 +64,7 @@ export default {
   overflow: hidden;
 }
 
-.section2 .icon_sec2_left_gsap {
+.question .icon_sec2_left_gsap {
   display: flex;
   position: absolute;
   left: 10%;
@@ -72,7 +72,7 @@ export default {
   transform: translate(0, 50%);
 }
 
-.section2 .icon_sec2_right_gsap {
+.question .icon_sec2_right_gsap {
   display: flex;
   position: absolute;
   right: 10%;
@@ -80,24 +80,24 @@ export default {
   transform: translate(0, -40%);
 }
 
-.section2 .title_sec2_outline {
+.question .title_sec2_outline {
   width: 100%;
   max-width: 950px;
 }
 
-.section2 .block_sec2_01_flyin {
+.question .block_sec2_01_flyin {
   transform: translate(17%, 0px);
   width: 100%;
   max-width: 1200px;
 }
 
-.section2 .block_sec2_02_flyin {
+.question .block_sec2_02_flyin {
   transform: translate(-17%, 0px);
   width: 100%;
   max-width: 1200px;
 }
 
-.section2 .block_sec2_03_flyin {
+.question .block_sec2_03_flyin {
   transform: translate(17%, 0px);
   width: 100%;
   max-width: 1200px;
