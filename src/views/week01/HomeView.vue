@@ -5,9 +5,7 @@
     <SolutionView />
     <ScheduleView />
     <EventView />
-
-    <img src="@/assets/images/week01/block_sec6_yellow.png" alt="block_sec6_yellow" class="block_sec6_yellow m-5">
-    <img src="@/assets/images/week01/block_sec6_red.png" alt="block_sec6_red" class="block_sec6_red m-5">
+    <PrizesView />
 
   </div>
 </template>
@@ -23,6 +21,7 @@ import QuestionView from '../../components/week01/QuestionView.vue';
 import SolutionView from '../../components/week01/SolutionView.vue';
 import ScheduleView from '../../components/week01/ScheduleView.vue';
 import EventView from '../../components/week01/EventView.vue';
+import PrizesView from '../../components/week01/PrizesView.vue';
 
 export default {
   name: 'HomeView',
@@ -31,7 +30,8 @@ export default {
     QuestionView,
     SolutionView,
     ScheduleView,
-    EventView
+    EventView,
+    PrizesView
   }
 }
 
