@@ -6,7 +6,7 @@
     <ScheduleView />
     <EventView />
     <PrizesView />
-
+    <SignUpView />
   </div>
 </template>
 
@@ -22,6 +22,7 @@ import SolutionView from '../../components/week01/SolutionView.vue';
 import ScheduleView from '../../components/week01/ScheduleView.vue';
 import EventView from '../../components/week01/EventView.vue';
 import PrizesView from '../../components/week01/PrizesView.vue';
+import SignUpView from '../../components/week01/SignUpView.vue';
 
 export default {
   name: 'HomeView',
@@ -31,7 +32,8 @@ export default {
     SolutionView,
     ScheduleView,
     EventView,
-    PrizesView
+    PrizesView,
+    SignUpView
   }
 }
 
