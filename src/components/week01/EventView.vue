@@ -1,17 +1,19 @@
 <template>
   <div class="event">
 
-      <img src="@/assets/images/week01/textblock_sec5_fixed.png" alt="textblock_sec5_fixed" class="textblock_sec5_fixed m-5" width="50">
+      <img @load="imageLoad" ref="image1" src="@/assets/images/week01/textblock_sec5_fixed.png" alt="textblock_sec5_fixed" class="textblock_sec5_fixed m-5" width="50">
 
-      <img src="@/assets/images/week01/timetable_sec5_arrows_scroll.png" alt="timetable_sec5_arrows_scroll" class="timetable_sec5_arrows_scroll m-5">
+      <img @load="imageLoad" ref="image2" src="@/assets/images/week01/timetable_sec5_arrows_scroll.png" alt="timetable_sec5_arrows_scroll" class="timetable_sec5_arrows_scroll m-5">
 
-      <div class="deco_info">
+      <div class="deco_info" ref="image3">
         <img src="@/assets/images/week01/deco_top.png" alt="deco_top" class="deco_top m-5">
 
         <img src="@/assets/images/week01/deco.png" alt="deco" class="deco m-5">
 
         <img src="@/assets/images/week01/deco_bottom.png" alt="deco_bottom" class="deco_bottom m-5">
       </div>
+
+      <div class="deco_end"></div>
 
   </div>
 </template>
@@ -20,24 +22,29 @@
 import gsap from 'gsap'
 
 export default {
-  mounted: function() {
-    this.scrollAnimation();
+  data() {
+    return {
+      imgLoaded: 0
+    }
   },
   methods: {
-    scrollAnimation() {
-
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".event",
-          markers: true,
-          scrub: true,
-          pin: true,
-        }
-      })
-      .to(".textblock_sec5_fixed", { x : -innerWidth * 1.5 })
-      .to(".timetable_sec5_arrows_scroll", { x : -innerWidth * 1.5 }, "<")
-      .to(".deco_info", { x : -innerWidth * 1.5 }, "<")
-
+    imageLoad() {
+      this.imgLoaded++;
+      if (this.imgLoaded >= 2) {
+        var max_width = (this.$refs.image1.offsetWidth + this.$refs.image2.offsetWidth + this.$refs.image3.offsetWidth) * 1.1;
+        gsap.timeline({
+          scrollTrigger: {
+            trigger: ".event",
+            end: ".deco_end",
+            markers: true,
+            scrub: true,
+            pin: true,
+          }
+        })
+        .to(".textblock_sec5_fixed", { x : -max_width + innerWidth })
+        .to(".timetable_sec5_arrows_scroll", { x : -max_width + innerWidth }, "<")
+        .to(".deco_info", { x : -max_width + innerWidth }, "<");
+      }
     }
   }
 }
