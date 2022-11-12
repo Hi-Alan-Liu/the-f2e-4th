@@ -10,7 +10,6 @@ import gsap from 'gsap'
 
 export default {
   mounted: function() {
-    this.scrollAnimation();
   },
   methods: {
     scrollAnimation() {
