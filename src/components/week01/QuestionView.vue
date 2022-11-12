@@ -29,7 +29,7 @@ export default {
           trigger: ".question",
           start: "center center",
           end: "bottom top",
-          markers: true,
+          markers: false,
           scrub: true,
           pin: true,
         }
@@ -41,7 +41,7 @@ export default {
       gsap.timeline({
         scrollTrigger: {
           trigger: ".question",
-          markers: true,
+          markers: false,
           scrub: true,
           pin: true,
         }

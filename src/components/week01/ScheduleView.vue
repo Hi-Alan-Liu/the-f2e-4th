@@ -30,7 +30,7 @@ export default {
       gsap.timeline({
         scrollTrigger: {
           trigger: ".schedule",
-          markers: true,
+          markers: false,
           scrub: true,
           pin: true,
         }
@@ -45,7 +45,7 @@ export default {
       gsap.timeline({
         scrollTrigger: {
           trigger: ".bg_sec4_track_rotate",
-          markers: true,
+          markers: false,
           scrub: true,
           pin: true,
         }

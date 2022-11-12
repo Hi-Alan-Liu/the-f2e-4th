@@ -27,7 +27,7 @@ export default {
       gsap.timeline({
         scrollTrigger: {
           trigger: ".solution",
-          markers: true,
+          markers: false,
           scrub: true,
           pin: true,
         }

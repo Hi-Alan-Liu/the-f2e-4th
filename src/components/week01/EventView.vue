@@ -39,7 +39,7 @@ export default {
       gsap.timeline({
         scrollTrigger: {
           trigger: ".event",
-          markers: true,
+          markers: false,
           scrub: true,
           pin: true,
         }

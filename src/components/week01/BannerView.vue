@@ -68,7 +68,7 @@ export default {
           trigger: ".banner",
           start: "center center",
           end: "bottom top",
-          markers: true,
+          markers: false,
           scrub: true,
           pin: true,
         }
