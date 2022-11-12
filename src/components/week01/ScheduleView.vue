@@ -42,6 +42,16 @@ export default {
       .to('.week3_sec4_circle', {x: -innerWidth * 0.33, y: -innerHeight * 0.8, duration:1}, "<")
       .to('.week3_sec4_circle', {x: innerWidth * 0.05, y: -innerHeight * 1.75, duration:1, delay: 2})
 
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".bg_sec4_track_rotate",
+          markers: true,
+          scrub: true,
+          pin: true,
+        }
+      })
+      .to(".bg_sec4_track_rotate", {rotation: 360})
+
     }
   }
 
@@ -104,7 +114,7 @@ export default {
 }
 
 .schedule .bg_sec4_track_rotate {
-  position: absolute;
-  margin: auto;
+  top: -55%;
+  left: 50%;
 }
 </style>
