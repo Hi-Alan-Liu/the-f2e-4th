@@ -88,7 +88,7 @@ export default {
 .banner .title {
   width: 72%;
   animation-name: example;
-  animation-duration: 0.5s;
+  animation-duration: 0.1s;
   animation-iteration-count: infinite;
 }
 

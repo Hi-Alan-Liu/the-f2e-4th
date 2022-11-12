@@ -33,7 +33,8 @@ export default {
   },
   methods: {
     scrollAnimation() {
-      var max_width = (this.$refs.image1.offsetWidth + this.$refs.image2.offsetWidth + this.$refs.image3.offsetWidth) * 1.15;
+
+      var max_width = (this.$refs.image1.offsetWidth + this.$refs.image2.offsetWidth + this.$refs.image3.offsetWidth) * 1.1;
 
       gsap.timeline({
         scrollTrigger: {

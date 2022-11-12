@@ -29,7 +29,7 @@
 
           <button class="btn btn-warning me-2 rounded-0" type="button">註冊報名</button>
 
-          <button class="btn btn-warning me-2 rounded-0" type="button">登入</button>
+          <button class="btn btn-warning me-2 rounded-0" style="width: 90px"  type="button">登入</button>
         </div>
       </div>
     </div>
